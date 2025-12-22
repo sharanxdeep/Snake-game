@@ -1,6 +1,6 @@
 let board = document.querySelector(".board");
-const blockWidth =80;
-const blockHeight = 80;
+const blockWidth =70;
+const blockHeight = 70;
 const colm = Math.floor(board.clientWidth / blockWidth);
 const rows = Math.floor(board.clientHeight / blockHeight);
 let intervalId = null;
@@ -75,6 +75,7 @@ function render(){
     if(head.x == food.x && head.y == food.y){
         blocks[`${food.x}-${food.y}`].classList.remove("food");
         food = {x: Math.floor(Math.random()*rows), y: Math.floor(Math.random()*colm)}
+        snake.unshift(head);
     }
     
     snake.forEach(function(element){
@@ -95,4 +96,4 @@ function render(){
 intervalId = setInterval(function(){
     render();
 }
-,300);
+,100);
