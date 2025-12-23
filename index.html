@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Snake Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <section>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- <main> -->
+      <section>
         <div class="infos">
-            <div class="info">
-                <h3>High Score:
-                <span id="high-score">0</span>
-                </h3>
-            </div>
-            <div class="info">
-                <h3>Score:
-                <span id="score">0</span>
-                </h3>
-                
-            </div>
-            <div class="info">
-                <h3>Time:
-                <span id="high-score">0</span>
-                </h3>
-            </div>
+          <div class="info">
+            <h3>
+              High Score:
+              <span id="high-score">0</span>
+            </h3>
+          </div>
+          <div class="info">
+            <h3>
+              Score:
+              <span id="score">0</span>
+            </h3>
+          </div>
+          <div class="info">
+            <h3>
+              Time:
+              <span id="timer">00-00</span>
+            </h3>
+          </div>
         </div>
-        <div class="board">
+        <div class="board"></div>
+      </section>
+      <div class="layer">
+        <div class="start-layer">
+            <h1>Welcome to the Snake Game</h1>
+            <button class="btn">Start</button>
         </div>
-
-    </section>
+        <div class="restart-layer">
+            <h1>Game Over!!!</h1>
+            <button class="r-btn">Restart</button>
+        </div>
+      </div>
+    <!-- </main> -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

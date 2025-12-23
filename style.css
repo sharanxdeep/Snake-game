@@ -78,3 +78,42 @@ section{
 .food{
     background-color: var(--bg-food-color);
 }
+
+.layer{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: rgba(96, 96, 96, 0.536);
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layer .start-layer,
+.layer .restart-layer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.layer .restart-layer{
+    display: none;
+}
+
+.btn,
+.r-btn{
+    padding: var(--space-s);
+    border-radius: var(--space-s);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.btn:hover,
+.r-btn:hover{
+    transform: scale(1.1);
+}
